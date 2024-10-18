@@ -27,7 +27,7 @@ console.log (userWordReversed)
 
 // CONTROLLO CHE PAROLA ORIGINALE E PAROLA AL CONTRARIO SIANO UGUALI
 
-if (userWordReversed === userWord) {
+if (userWordReversed.toUpperCase() === userWord.toUpperCase()) {
     console.log (`La parola ${userWord} è palindroma!`)
 } else {
     console.log (`La parola ${userWord} non è palindroma!`)
