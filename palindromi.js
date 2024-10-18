@@ -7,7 +7,7 @@ console.log(userWord)
 
 // CREO UNA FUNZIONE PER POTER CONTROLLARE CHE LA PAROLA IN QUESTIONE SIA PALINDROMA 
 
-function isWordPalindrome(text) {
+function wordPalindrome(text) {
     let newWord = ''
 
     // INVERTO LA STRINGA USERWORD 
@@ -20,8 +20,12 @@ function isWordPalindrome(text) {
     return newWord
 }
 
-const userWordReversed = isWordPalindrome(userWord)
+// CREO UNA VARIABILE A CUI ASSEGNO LA PAROLA AL CONTARIO
+
+const userWordReversed = wordPalindrome(userWord)
 console.log (userWordReversed)
+
+// CONTROLLO CHE PAROLA ORIGINALE E PAROLA AL CONTRARIO SIANO UGUALI
 
 if (userWordReversed === userWord) {
     console.log (`La parola ${userWord} è palindroma!`)
